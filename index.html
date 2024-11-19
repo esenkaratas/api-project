@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meal Mate</title>
+    <link rel="stylesheet" href="./public/styles.css" />
+    <link rel="icon" href="./public/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="header">
+      <img
+        src="./public/logo.png"
+        alt="Meal Mate Logo"
+        id="logo"
+        onclick="window.location.href = './index.html'"
+      />
+      <h1>Meal Mate</h1>
+      <div id="search-bar">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search meals by name or ingredients..."
+        />
+        <button id="search-button">Search</button>
+        <button id="random-meal-button">Surprise Me!</button>
+      </div>
+    </div>
+    <div id="app-root"></div>
+    <div class="footer">
+      <p>
+        &copy; 2024 MealMate. All rights reserved. Developed by
+        <a href="https://github.com/esenkaratas" target="_blank"
+          >Esen Karatas</a
+        >
+      </p>
+    </div>
+    <script type="module" src="./src/app.js"></script>
+  </body>
+</html>
